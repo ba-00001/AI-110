@@ -6,6 +6,10 @@ This folder contains a **fully fixed** version of the Playlist Chaos Streamlit a
 
 <img src="https://github.com/user-attachments/assets/9ce0ae14-a7ed-410b-afa5-306cbf3c92ef" alt="Playlist Chaos Preview" width="600" />
 
+## Video Walkthrough
+
+Here is the video walkthrough: [Watch/Download the video](https://github.com/ba-00001/AI-110/blob/main/week-1/playlist-chaos-completed/week1-vid-playlist-chaos-completed.mp4)
+
 I commented the code so it’s clear what I changed and why (and so it’s easier to follow during review, demos, or grading).
 
 ## What was fixed (matches the "Intended Behavior" rules)
@@ -54,4 +58,7 @@ The original starter repo zip is included **inside this solution zip** at:
 ## Original activity context
 
 Your AI assistant tried to build a smart playlist generator. The app runs, but some of the behavior is unpredictable. Your task is to explore the app, investigate the code, and use an AI assistant to debug and improve it.
+
+
+
 
