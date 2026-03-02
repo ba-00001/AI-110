@@ -47,6 +47,19 @@ def check_guess(guess, secret):
     return "Too Low", "Go HIGHER!"
 
 
+def describe_distance(guess: int, secret: int):
+    """Return a simple temperature label based on how close the guess is."""
+    difference = abs(guess - secret)
+
+    if difference == 0:
+        return "Exact"
+    if difference <= 5:
+        return "Hot"
+    if difference <= 15:
+        return "Warm"
+    return "Cold"
+
+
 def update_score(current_score: int, outcome: str, attempt_number: int):
     """Update score based on outcome and attempt number."""
     if outcome == "Win":

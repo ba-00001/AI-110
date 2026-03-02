@@ -2,7 +2,13 @@ import random
 
 import streamlit as st
 
-from logic_utils import check_guess, get_range_for_difficulty, parse_guess, update_score
+from logic_utils import (
+    check_guess,
+    describe_distance,
+    get_range_for_difficulty,
+    parse_guess,
+    update_score,
+)
 
 
 def reset_round(low: int, high: int) -> None:
@@ -49,6 +55,12 @@ if st.session_state.difficulty != difficulty:
     # FIX: Reset the round when the user changes difficulty so the secret matches the selected range.
     st.session_state.difficulty = difficulty
     reset_round(low, high)
+
+st.sidebar.subheader("Guess History")
+if st.session_state.history:
+    st.sidebar.table(st.session_state.history)
+else:
+    st.sidebar.caption("No guesses yet.")
 
 st.subheader("Make a guess")
 st.info(
@@ -98,13 +110,28 @@ if submit:
         st.error(f"Enter a number between {low} and {high}.")
     else:
         st.session_state.attempts += 1
-        st.session_state.history.append(guess_int)
-
         # FIX: Refactored comparison logic into logic_utils.py and removed the broken int/string switching.
         outcome, message = check_guess(guess_int, st.session_state.secret)
+        temperature = describe_distance(guess_int, st.session_state.secret)
+        st.session_state.history.append(
+            {
+                "Attempt": st.session_state.attempts,
+                "Guess": guess_int,
+                "Result": outcome,
+                "Heat": temperature,
+            }
+        )
 
-        if show_hint and outcome != "Win":
-            st.warning(message)
+        if show_hint:
+            feedback = f"{message} | {temperature}"
+            if outcome == "Win":
+                st.success("Correct! | Exact")
+            elif temperature == "Hot":
+                st.success(feedback)
+            elif temperature == "Warm":
+                st.warning(feedback)
+            else:
+                st.info(feedback)
 
         st.session_state.score = update_score(
             current_score=st.session_state.score,

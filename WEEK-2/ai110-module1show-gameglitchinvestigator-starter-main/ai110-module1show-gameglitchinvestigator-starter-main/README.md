@@ -26,14 +26,15 @@ The goal was to debug the app, move the game rules into a reusable logic module,
 
 ## Demo
 
-- Add a screenshot here after you run the fixed app locally and win one round.
 
 ## Preview
 
-<img src="https://github.com/user-attachments/assets/994d6980-2085-4b57-b68c-7e2a1b6e09a3" alt="Playlist Chaos Preview" width="600" />
+<img src="https://github.com/user-attachments/assets/6507d5f4-69f6-4874-b366-0ad7fee98d53" alt="Playlist Chaos Preview" width="600" />
 
 <img src="https://github.com/user-attachments/assets/5414a3e2-2cc5-4ba9-b484-1bbb07781d7a" alt="Playlist Chaos Preview" width="600" />
 
 ## Stretch Features
 
-- Not completed in this version.
+- Added enhanced game UI feedback with color-coded "Hot / Warm / Cold" messages after each valid guess.
+- Added a sidebar guess-history table that shows the attempt number, guess, result, and heat rating for the current round.
+- Added extra edge-case pytest coverage for negative input, invalid large input, and the new distance-label helper logic.
