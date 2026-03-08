@@ -13,27 +13,27 @@ The original ByteBites prototype had unclear structure and unreliable behavior. 
 
 Each class maps directly to a key part of the feature request so the final code stays easy to explain and verify.
 
-## Image Placeholders
+`## Image Placeholders`
 
-Add screenshots to this section later before final submission.
+`Add screenshots to this section later before final submission.`
 
-### Browser Home Screen
+`### Browser Home Screen`
 
 `[Insert screenshot of the main ByteBites browser page here]`
 
-### Menu Filtering and Sorting
+`### Menu Filtering and Sorting`
 
 `[Insert screenshot showing the category filter, search, and sorting tools here]`
 
-### Order Panel and Verification
+`### Order Panel and Verification`
 
 `[Insert screenshot showing items added to the order and verified customer status here]`
 
-### AI Assistant Demo
+`### AI Assistant Demo`
 
 `[Insert screenshot showing a Gemini or fallback AI recommendation here]`
 
-## Files Included
+`## Files Included`
 
 - `bytebites_spec.md`: the copied feature request plus the selected candidate classes.
 - `draft_from_copilot.md`: an early rough UML-style draft with quick review notes.
