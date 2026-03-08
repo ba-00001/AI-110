@@ -209,6 +209,3 @@ This project demonstrates how to:
 - apply simple algorithms for filtering, sorting, and validation
 - test behavior with pytest
 
-## Final Notes
-
-All work for this assignment was kept inside `WEEK-3` as requested. `WEEK-2` was not modified.
