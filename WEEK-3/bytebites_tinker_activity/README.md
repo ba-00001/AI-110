@@ -13,6 +13,7 @@ The original ByteBites prototype had unclear structure and unreliable behavior. 
 
 Each class maps directly to a key part of the feature request so the final code stays easy to explain and verify.
 
+<!--
 `## Image Placeholders`
 
 `Add screenshots to this section later before final submission.`
@@ -32,6 +33,8 @@ Each class maps directly to a key part of the feature request so the final code 
 `### AI Assistant Demo`
 
 `[Insert screenshot showing a Gemini or fallback AI recommendation here]`
+
+-->
 
 `## Files Included`
 
@@ -147,7 +150,7 @@ python -m pytest
 If you want to see the project in a web browser on your own computer, open the ByteBites folder and run:
 
 ```powershell
-cd "c:\Users\Telsa\Documents\Google Alien\AI-110\AI-110\WEEK-3\bytebites_tinker_activity"
+cd "c:\Users\User\Documents\Folder name\AI-110\AI-110\WEEK-3\bytebites_tinker_activity"
 python ai_server.py
 ```
 
