@@ -7,3 +7,4 @@ __pycache__/
 
 # Local app secrets
 WEEK-3/bytebites_tinker_activity/.env
+WEEK-3/bytebites_enhanced_version/.env

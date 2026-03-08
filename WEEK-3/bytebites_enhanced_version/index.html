@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteBites Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="page">
+        <section class="hero">
+            <p class="eyebrow">Demo - Build by Brian Bazurto</p>
+            <h1>ByteBites</h1>
+            <p class="intro">
+                This local app shows the ByteBites menu, lets customers build an order,
+                filter and search items, and track when a customer becomes verified after a purchase.
+            </p>
+            <p class="intro">
+                It also includes a Gemini-powered ByteBites AI assistant that can recommend items
+                based on the live menu and the current order.
+            </p>
+        </section>
+
+        <section class="stats-grid">
+            <article class="stat-card">
+                <p class="stat-label">Visible Items</p>
+                <p id="visible-count" class="stat-value">0</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Current Category</p>
+                <p id="active-category" class="stat-value">All</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Completed Orders</p>
+                <p id="completed-orders-count" class="stat-value">0</p>
+            </article>
+            <article class="stat-card">
+                <p class="stat-label">Top Recommendation</p>
+                <p id="top-recommendation" class="stat-value">Spicy Burger</p>
+            </article>
+        </section>
+
+        <section class="panel">
+            <h2>Menu Controls</h2>
+            <div class="controls">
+                <div class="control-field">
+                    <label for="category-filter">Filter by category</label>
+                    <select id="category-filter">
+                        <option value="All">All</option>
+                        <option value="Entrees">Entrees</option>
+                        <option value="Drinks">Drinks</option>
+                        <option value="Desserts">Desserts</option>
+                    </select>
+                </div>
+
+                <div class="control-field">
+                    <label for="search-input">Search menu items</label>
+                    <input id="search-input" type="text" placeholder="Try burger or tea">
+                </div>
+
+                <button id="sort-button" type="button">Sort by Popularity</button>
+                <button id="price-sort-button" type="button">Sort by Price</button>
+                <button id="reset-button" type="button">Reset View</button>
+            </div>
+        </section>
+
+        <section class="layout">
+            <section class="panel">
+                <h2>Menu Items</h2>
+                <p class="section-note">
+                    Click <strong>Add to Order</strong> on any item to build a sample transaction.
+                </p>
+                <div id="menu-list" class="card-grid"></div>
+                <p id="empty-results" class="empty-results" hidden>No items match the current filter.</p>
+            </section>
+
+            <section class="panel order-panel">
+                <h2>Current Order</h2>
+                <ul id="order-list" class="order-list"></ul>
+                <div class="summary">
+                    <p><strong>Items:</strong> <span id="item-count">0</span></p>
+                    <p><strong>Average price:</strong> $<span id="average-price">0.00</span></p>
+                    <p><strong>Total:</strong> $<span id="order-total">0.00</span></p>
+                    <p><strong>Customer:</strong> Jordan Lee</p>
+                    <p><strong>Verified:</strong> <span id="verified-status">No</span></p>
+                </div>
+                <div class="button-row">
+                    <button id="clear-order-button" type="button">Clear Order</button>
+                    <button id="complete-order-button" type="button">Complete Order</button>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h2>Smart Recommendations</h2>
+                <p class="section-note">
+                    Recommendations stay inside the same category as the most recent item added to the order.
+                </p>
+                <ul id="recommendation-list" class="recommendation-list"></ul>
+            </section>
+
+            <section class="panel">
+                <h2>ByteBites AI Assistant</h2>
+                <p class="section-note">
+                    Ask for combos, cheap meals, drink suggestions, dessert ideas, or a meal under a budget.
+                </p>
+                <div class="ai-box">
+                    <label for="ai-prompt">Ask the AI</label>
+                    <textarea id="ai-prompt" rows="4" placeholder="Build me a meal under $12 with a drink."></textarea>
+                    <div class="button-row">
+                        <button id="ai-submit-button" type="button">Ask AI</button>
+                    </div>
+                    <div class="ai-response">
+                        <p class="stat-label">AI Response</p>
+                        <pre id="ai-response-text">The assistant is ready.</pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h2>Order History</h2>
+                <p class="section-note">
+                    Completed orders are stored below to mirror the customer purchase history requirement.
+                </p>
+                <ul id="history-list" class="history-list"></ul>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
