@@ -3,4 +3,7 @@ __pycache__/
 *.py[cod]
 
 # Large local media artifacts
-*.mp4
+#*.mp4
+
+# Local app secrets
+WEEK-3/bytebites_tinker_activity/.env
