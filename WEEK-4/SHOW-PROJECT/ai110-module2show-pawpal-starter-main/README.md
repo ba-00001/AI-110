@@ -96,6 +96,10 @@ The app includes:
 - A daily smart plan with explanation text
 - Conflict warnings shown with Streamlit status components
 
+<img src="https://github.com/user-attachments/assets/7f5d77bd-dcb3-466e-a259-35292494871e" alt="PawPal+ demo screenshot 1" width="600" />
+
+<img src="https://github.com/user-attachments/assets/0496f3ab-f855-4dd2-96e1-0d6d50329149" alt="PawPal+ demo screenshot 2" width="600" />
+
 ## AI Collaboration Notes
 
 I used AI support mainly for design brainstorming, thinking through class relationships, and comparing algorithmic options. The most useful pattern was asking for a small, focused improvement at each step instead of generating the whole project at once. That made it easier to verify the logic and keep the code readable.
