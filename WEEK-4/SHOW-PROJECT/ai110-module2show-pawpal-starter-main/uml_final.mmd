@@ -1,0 +1,51 @@
+classDiagram
+    class Owner {
+        +str name
+        +int time_available_minutes
+        +list preferences
+        +list pets
+        +add_pet(pet)
+        +get_pet(pet_name)
+        +all_tasks(include_completed)
+    }
+
+    class Pet {
+        +str name
+        +str species
+        +int age
+        +str notes
+        +list tasks
+        +add_task(task)
+        +remove_task(task_title, due_time)
+        +get_tasks(include_completed)
+    }
+
+    class Task {
+        +str title
+        +str time
+        +int duration_minutes
+        +str priority
+        +str frequency
+        +date due_date
+        +str notes
+        +bool completed
+        +mark_complete()
+        +sort_key()
+        +minutes_since_midnight()
+    }
+
+    class Scheduler {
+        +Owner owner
+        +get_tasks_for_day(target_date, include_completed)
+        +sort_by_time(task_pairs)
+        +sort_by_priority(task_pairs)
+        +filter_tasks(pet_name, completed, target_date)
+        +detect_conflicts(target_date)
+        +mark_task_complete(pet_name, task_title, due_time, target_date)
+        +build_daily_plan(target_date, available_minutes)
+        +schedule_as_rows(target_date, include_completed)
+    }
+
+    Owner "1" --> "*" Pet : manages
+    Pet "1" --> "*" Task : tracks
+    Scheduler --> Owner : reads data from
