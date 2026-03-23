@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <style>
+    .box { fill: #f7f7f7; stroke: #222; stroke-width: 2; rx: 10; ry: 10; }
+    .title { font: bold 20px sans-serif; }
+    .text { font: 15px sans-serif; }
+    .arrow { stroke: #222; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#222" />
+    </marker>
+  </defs>
+
+  <rect class="box" x="40" y="40" width="220" height="180" />
+  <text class="title" x="60" y="75">Owner</text>
+  <text class="text" x="60" y="110">+ name</text>
+  <text class="text" x="60" y="135">+ daily_minutes_available</text>
+  <text class="text" x="60" y="160">+ preferences</text>
+  <text class="text" x="60" y="190">+ add_pet()</text>
+  <text class="text" x="60" y="215">+ get_pet()</text>
+
+  <rect class="box" x="380" y="40" width="220" height="190" />
+  <text class="title" x="400" y="75">Pet</text>
+  <text class="text" x="400" y="110">+ name</text>
+  <text class="text" x="400" y="135">+ species</text>
+  <text class="text" x="400" y="160">+ age</text>
+  <text class="text" x="400" y="185">+ tasks</text>
+  <text class="text" x="400" y="210">+ add_task()</text>
+
+  <rect class="box" x="710" y="40" width="230" height="240" />
+  <text class="title" x="730" y="75">Task</text>
+  <text class="text" x="730" y="110">+ title</text>
+  <text class="text" x="730" y="135">+ due_time</text>
+  <text class="text" x="730" y="160">+ due_date</text>
+  <text class="text" x="730" y="185">+ duration_minutes</text>
+  <text class="text" x="730" y="210">+ priority</text>
+  <text class="text" x="730" y="235">+ frequency</text>
+  <text class="text" x="730" y="260">+ completed</text>
+
+  <rect class="box" x="300" y="320" width="340" height="150" />
+  <text class="title" x="320" y="355">Scheduler</text>
+  <text class="text" x="320" y="390">+ sort_by_time()</text>
+  <text class="text" x="320" y="415">+ filter_tasks()</text>
+  <text class="text" x="320" y="440">+ detect_conflicts()</text>
+  <text class="text" x="320" y="465">+ generate_daily_schedule()</text>
+
+  <path class="arrow" d="M260 130 L380 130" />
+  <path class="arrow" d="M600 140 L710 140" />
+  <path class="arrow" d="M470 320 L470 230" />
+  <text class="text" x="285" y="120">has many</text>
+  <text class="text" x="625" y="130">has many</text>
+  <text class="text" x="490" y="300">organizes</text>
+</svg>
