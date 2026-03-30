@@ -14,6 +14,8 @@ In this project, I am practicing how to:
 - rank songs from strongest match to weakest match
 - think about limits, bias, and fairness in recommendation systems
 
+<img src="https://github.com/user-attachments/assets/cc4bac2b-2e23-408a-95cb-074c0c9acf59" width="600" />
+
 ## Project Instructions
 
 ### Phase 1: Understanding the Problem
