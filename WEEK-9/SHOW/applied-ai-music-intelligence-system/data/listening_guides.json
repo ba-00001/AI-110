@@ -1,0 +1,49 @@
+{
+  "genres": {
+    "pop": {
+      "summary": "Pop tracks in this catalog usually have high danceability, bright valence, and polished production, so they work well for upbeat daily listening."
+    },
+    "lofi": {
+      "summary": "Lofi songs here lean softer, more acoustic, and lower energy, which makes them strong candidates for study, reading, or calm focus."
+    },
+    "rock": {
+      "summary": "Rock selections in this dataset skew intense and high energy, so they fit energetic or adrenaline-heavy sessions."
+    },
+    "ambient": {
+      "summary": "Ambient tracks in the catalog are sparse and low energy, which supports background listening more than active sing-along moments."
+    },
+    "jazz": {
+      "summary": "Jazz entries here are relaxed and acoustic-forward, which helps when the user wants warmth without too much energy."
+    },
+    "synthwave": {
+      "summary": "Synthwave songs in this dataset favor pulsing rhythm and moody momentum, making them useful for nighttime or driving vibes."
+    },
+    "indie pop": {
+      "summary": "Indie pop overlaps with pop on energy and mood but keeps a slightly softer, more textured feel."
+    }
+  },
+  "moods": {
+    "happy": {
+      "summary": "Happy sessions should emphasize high valence, danceability, and energy that feels lively instead of flat."
+    },
+    "chill": {
+      "summary": "Chill sessions work best with moderate-to-low energy and smooth movement rather than sharp tempo spikes."
+    },
+    "relaxed": {
+      "summary": "Relaxed listening should reduce intensity and keep the sound warm, steady, and easy to leave in the background."
+    },
+    "focused": {
+      "summary": "Focused listening benefits from emotional steadiness and enough rhythm to stay alert without becoming distracting."
+    },
+    "moody": {
+      "summary": "Moody sessions often balance darker emotional color with a bit of rhythmic pull."
+    },
+    "intense": {
+      "summary": "Intense listening should prioritize urgency, strong energy, and a more forceful tempo profile."
+    }
+  },
+  "preferences": {
+    "acoustic": "When the user prefers acoustic texture, the system should favor tracks with higher acousticness and softer production.",
+    "studio": "When the user does not want an acoustic feel, the system should prefer cleaner studio production and lower acousticness."
+  }
+}
